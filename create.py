@@ -4,8 +4,6 @@ import uuid
 from datetime import datetime
 import os
 
-# That's the lambda handler, you can not modify this method
-# the parameters from JSON body can be accessed like deviceId = event['deviceId']
 def lambda_handler(event, context):
     # Instanciating connection objects with DynamoDB using boto3 dependency
     dynamodb = boto3.resource('dynamodb')
